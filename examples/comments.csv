@@ -1,0 +1,91 @@
+ParentId,CreatedById,CreatedDate,Body,IsCustomer__c
+C-1001,user-cust-00,2026-01-10 09:30:00,"Connector stops pulling data. Our OAuth token expired and reauthorize fails. Urgent, this is blocked again.",True
+C-1001,user-agent-00,2026-01-10 11:00:00,Please reauthorize the connection and confirm the token refresh schedule.,False
+C-1001,user-cust-00,2026-01-10 13:00:00,"Reauthorized, thanks. It works now.",True
+C-1002,user-cust-01,2026-02-11 09:30:00,Dashboards are slow and queries hit a timeout on large tables.,True
+C-1002,user-agent-01,2026-02-11 11:00:00,We added an index hint and reduced the date range.,False
+C-1002,user-cust-01,2026-02-11 13:00:00,"Faster now, resolved.",True
+C-1003,user-cust-02,2026-03-12 09:30:00,Analysts get access denied on the finance workspace.,True
+C-1003,user-agent-02,2026-03-12 11:00:00,Your role was missing the workspace viewer grant. Added it.,False
+C-1003,user-cust-02,2026-03-12 13:00:00,"Thanks, I can see it now.",True
+C-1004,user-cust-03,2026-04-13 09:30:00,The csv export drops two columns and reorders headers.,True
+C-1004,user-agent-00,2026-04-13 11:00:00,The export uses the saved view columns. Update the view.,False
+C-1004,user-cust-03,2026-04-13 13:00:00,"Fixed, thanks.",True
+C-1005,user-cust-04,2026-05-14 09:30:00,"Data is stale. The nightly sync is not updating since Monday. Urgent, this is blocked again.",True
+C-1005,user-agent-01,2026-05-14 11:00:00,The sync schedule was paused after a failed run. Resumed it.,False
+C-1005,user-cust-04,2026-05-14 13:00:00,"Still stale an hour later. This is unacceptable, we will escalate.",True
+C-1006,user-cust-05,2026-06-15 09:30:00,How do I schedule a weekly report to a shared mailbox?,True
+C-1006,user-agent-02,2026-06-15 11:00:00,"Open Schedules, choose weekly, add the recipient list.",False
+C-1006,user-cust-05,2026-06-15 13:00:00,"Perfect, thanks.",True
+C-1007,user-cust-06,2026-07-16 09:30:00,Connector stops pulling data. Our OAuth token expired and reauthorize fails.,True
+C-1007,user-agent-00,2026-07-16 11:00:00,Please reauthorize the connection and confirm the token refresh schedule.,False
+C-1007,user-cust-06,2026-07-16 13:00:00,"Reauthorized, thanks. It works now.",True
+C-1008,user-cust-00,2026-08-17 09:30:00,Dashboards are slow and queries hit a timeout on large tables.,True
+C-1008,user-agent-01,2026-08-17 11:00:00,We added an index hint and reduced the date range.,False
+C-1008,user-cust-00,2026-08-17 13:00:00,"Faster now, resolved.",True
+C-1009,user-cust-01,2026-09-18 09:30:00,"Analysts get access denied on the finance workspace. Urgent, this is blocked again.",True
+C-1009,user-agent-02,2026-09-18 11:00:00,Your role was missing the workspace viewer grant. Added it.,False
+C-1009,user-cust-01,2026-09-18 13:00:00,"Thanks, I can see it now.",True
+C-1010,user-cust-02,2026-01-10 09:30:00,The csv export drops two columns and reorders headers.,True
+C-1010,user-agent-00,2026-01-10 11:00:00,The export uses the saved view columns. Update the view.,False
+C-1010,user-cust-02,2026-01-10 13:00:00,"Fixed, thanks.",True
+C-1011,user-cust-03,2026-02-11 09:30:00,Data is stale. The nightly sync is not updating since Monday.,True
+C-1011,user-agent-01,2026-02-11 11:00:00,The sync schedule was paused after a failed run. Resumed it.,False
+C-1011,user-cust-03,2026-02-11 13:00:00,"Still stale an hour later. This is unacceptable, we will escalate.",True
+C-1012,user-cust-04,2026-03-12 09:30:00,How do I schedule a weekly report to a shared mailbox?,True
+C-1012,user-agent-02,2026-03-12 11:00:00,"Open Schedules, choose weekly, add the recipient list.",False
+C-1012,user-cust-04,2026-03-12 13:00:00,"Perfect, thanks.",True
+C-1013,user-cust-05,2026-04-13 09:30:00,"Connector stops pulling data. Our OAuth token expired and reauthorize fails. Urgent, this is blocked again.",True
+C-1013,user-agent-00,2026-04-13 11:00:00,Please reauthorize the connection and confirm the token refresh schedule.,False
+C-1013,user-cust-05,2026-04-13 13:00:00,"Reauthorized, thanks. It works now.",True
+C-1014,user-cust-06,2026-05-14 09:30:00,Dashboards are slow and queries hit a timeout on large tables.,True
+C-1014,user-agent-01,2026-05-14 11:00:00,We added an index hint and reduced the date range.,False
+C-1014,user-cust-06,2026-05-14 13:00:00,"Faster now, resolved.",True
+C-1015,user-cust-00,2026-06-15 09:30:00,Analysts get access denied on the finance workspace.,True
+C-1015,user-agent-02,2026-06-15 11:00:00,Your role was missing the workspace viewer grant. Added it.,False
+C-1015,user-cust-00,2026-06-15 13:00:00,"Thanks, I can see it now.",True
+C-1016,user-cust-01,2026-07-16 09:30:00,The csv export drops two columns and reorders headers.,True
+C-1016,user-agent-00,2026-07-16 11:00:00,The export uses the saved view columns. Update the view.,False
+C-1016,user-cust-01,2026-07-16 13:00:00,"Fixed, thanks.",True
+C-1017,user-cust-02,2026-08-17 09:30:00,"Data is stale. The nightly sync is not updating since Monday. Urgent, this is blocked again.",True
+C-1017,user-agent-01,2026-08-17 11:00:00,The sync schedule was paused after a failed run. Resumed it.,False
+C-1017,user-cust-02,2026-08-17 13:00:00,"Still stale an hour later. This is unacceptable, we will escalate.",True
+C-1018,user-cust-03,2026-09-18 09:30:00,How do I schedule a weekly report to a shared mailbox?,True
+C-1018,user-agent-02,2026-09-18 11:00:00,"Open Schedules, choose weekly, add the recipient list.",False
+C-1018,user-cust-03,2026-09-18 13:00:00,"Perfect, thanks.",True
+C-1019,user-cust-04,2026-01-10 09:30:00,Connector stops pulling data. Our OAuth token expired and reauthorize fails.,True
+C-1019,user-agent-00,2026-01-10 11:00:00,Please reauthorize the connection and confirm the token refresh schedule.,False
+C-1019,user-cust-04,2026-01-10 13:00:00,"Reauthorized, thanks. It works now.",True
+C-1020,user-cust-05,2026-02-11 09:30:00,Dashboards are slow and queries hit a timeout on large tables.,True
+C-1020,user-agent-01,2026-02-11 11:00:00,We added an index hint and reduced the date range.,False
+C-1020,user-cust-05,2026-02-11 13:00:00,"Faster now, resolved.",True
+C-1021,user-cust-06,2026-03-12 09:30:00,"Analysts get access denied on the finance workspace. Urgent, this is blocked again.",True
+C-1021,user-agent-02,2026-03-12 11:00:00,Your role was missing the workspace viewer grant. Added it.,False
+C-1021,user-cust-06,2026-03-12 13:00:00,"Thanks, I can see it now.",True
+C-1022,user-cust-00,2026-04-13 09:30:00,The csv export drops two columns and reorders headers.,True
+C-1022,user-agent-00,2026-04-13 11:00:00,The export uses the saved view columns. Update the view.,False
+C-1022,user-cust-00,2026-04-13 13:00:00,"Fixed, thanks.",True
+C-1023,user-cust-01,2026-05-14 09:30:00,Data is stale. The nightly sync is not updating since Monday.,True
+C-1023,user-agent-01,2026-05-14 11:00:00,The sync schedule was paused after a failed run. Resumed it.,False
+C-1023,user-cust-01,2026-05-14 13:00:00,"Still stale an hour later. This is unacceptable, we will escalate.",True
+C-1024,user-cust-02,2026-06-15 09:30:00,How do I schedule a weekly report to a shared mailbox?,True
+C-1024,user-agent-02,2026-06-15 11:00:00,"Open Schedules, choose weekly, add the recipient list.",False
+C-1024,user-cust-02,2026-06-15 13:00:00,"Perfect, thanks.",True
+C-1025,user-cust-03,2026-07-16 09:30:00,"Connector stops pulling data. Our OAuth token expired and reauthorize fails. Urgent, this is blocked again.",True
+C-1025,user-agent-00,2026-07-16 11:00:00,Please reauthorize the connection and confirm the token refresh schedule.,False
+C-1025,user-cust-03,2026-07-16 13:00:00,"Reauthorized, thanks. It works now.",True
+C-1026,user-cust-04,2026-08-17 09:30:00,Dashboards are slow and queries hit a timeout on large tables.,True
+C-1026,user-agent-01,2026-08-17 11:00:00,We added an index hint and reduced the date range.,False
+C-1026,user-cust-04,2026-08-17 13:00:00,"Faster now, resolved.",True
+C-1027,user-cust-05,2026-09-18 09:30:00,Analysts get access denied on the finance workspace.,True
+C-1027,user-agent-02,2026-09-18 11:00:00,Your role was missing the workspace viewer grant. Added it.,False
+C-1027,user-cust-05,2026-09-18 13:00:00,"Thanks, I can see it now.",True
+C-1028,user-cust-06,2026-01-10 09:30:00,The csv export drops two columns and reorders headers.,True
+C-1028,user-agent-00,2026-01-10 11:00:00,The export uses the saved view columns. Update the view.,False
+C-1028,user-cust-06,2026-01-10 13:00:00,"Fixed, thanks.",True
+C-1029,user-cust-00,2026-02-11 09:30:00,"Data is stale. The nightly sync is not updating since Monday. Urgent, this is blocked again.",True
+C-1029,user-agent-01,2026-02-11 11:00:00,The sync schedule was paused after a failed run. Resumed it.,False
+C-1029,user-cust-00,2026-02-11 13:00:00,"Still stale an hour later. This is unacceptable, we will escalate.",True
+C-1030,user-cust-01,2026-03-12 09:30:00,How do I schedule a weekly report to a shared mailbox?,True
+C-1030,user-agent-02,2026-03-12 11:00:00,"Open Schedules, choose weekly, add the recipient list.",False
+C-1030,user-cust-01,2026-03-12 13:00:00,"Perfect, thanks.",True

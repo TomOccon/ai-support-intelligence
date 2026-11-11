@@ -1,0 +1,31 @@
+Id,Subject,Description,Product_Area__c,Priority,CreatedDate,ClosedDate
+C-1001,Quillbase Analytics: oauth token expired,Connector stops pulling data. Our OAuth token expired and reauthorize fails.,Lumenfield oauth,Critical,2026-01-10 09:00:00,2026-01-20 16:00:00
+C-1002,Quillbase Analytics: query timeout,Dashboards are slow and queries hit a timeout on large tables.,Tessera query,High,2026-02-11 09:00:00,2026-02-21 16:00:00
+C-1003,Lumenfield Bridge: permission error,Analysts get access denied on the finance workspace.,Lumenfield permission,Medium,2026-03-12 09:00:00,2026-03-22 16:00:00
+C-1004,Tessera Gateway: csv export columns,The csv export drops two columns and reorders headers.,Lumenfield csv,Low,2026-04-13 09:00:00,2026-04-23 16:00:00
+C-1005,Quillbase Analytics: stale data sync,Data is stale. The nightly sync is not updating since Monday.,Tessera stale,Critical,2026-05-14 09:00:00,2026-05-24 16:00:00
+C-1006,Lumenfield Bridge: how to schedule report,How do I schedule a weekly report to a shared mailbox?,Tessera how,High,2026-06-15 09:00:00,2026-06-25 16:00:00
+C-1007,Lumenfield Bridge: oauth token expired,Connector stops pulling data. Our OAuth token expired and reauthorize fails.,Lumenfield oauth,Medium,2026-07-16 09:00:00,2026-07-26 16:00:00
+C-1008,Lumenfield Bridge: query timeout,Dashboards are slow and queries hit a timeout on large tables.,Quillbase query,Low,2026-08-17 09:00:00,2026-08-27 16:00:00
+C-1009,Quillbase Analytics: permission error,Analysts get access denied on the finance workspace.,Lumenfield permission,Critical,2026-09-18 09:00:00,2026-09-28 16:00:00
+C-1010,Lumenfield Bridge: csv export columns,The csv export drops two columns and reorders headers.,Lumenfield csv,High,2026-01-10 09:00:00,2026-01-20 16:00:00
+C-1011,Tessera Gateway: stale data sync,Data is stale. The nightly sync is not updating since Monday.,Quillbase stale,Medium,2026-02-11 09:00:00,2026-02-21 16:00:00
+C-1012,Lumenfield Bridge: how to schedule report,How do I schedule a weekly report to a shared mailbox?,Tessera how,Low,2026-03-12 09:00:00,2026-03-22 16:00:00
+C-1013,Lumenfield Bridge: oauth token expired,Connector stops pulling data. Our OAuth token expired and reauthorize fails.,Lumenfield oauth,Critical,2026-04-13 09:00:00,2026-04-23 16:00:00
+C-1014,Tessera Gateway: query timeout,Dashboards are slow and queries hit a timeout on large tables.,Tessera query,High,2026-05-14 09:00:00,2026-05-24 16:00:00
+C-1015,Tessera Gateway: permission error,Analysts get access denied on the finance workspace.,Lumenfield permission,Medium,2026-06-15 09:00:00,2026-06-25 16:00:00
+C-1016,Tessera Gateway: csv export columns,The csv export drops two columns and reorders headers.,Tessera csv,Low,2026-07-16 09:00:00,2026-07-26 16:00:00
+C-1017,Quillbase Analytics: stale data sync,Data is stale. The nightly sync is not updating since Monday.,Lumenfield stale,Critical,2026-08-17 09:00:00,2026-08-27 16:00:00
+C-1018,Lumenfield Bridge: how to schedule report,How do I schedule a weekly report to a shared mailbox?,Lumenfield how,High,2026-09-18 09:00:00,2026-09-28 16:00:00
+C-1019,Tessera Gateway: oauth token expired,Connector stops pulling data. Our OAuth token expired and reauthorize fails.,Lumenfield oauth,Medium,2026-01-10 09:00:00,2026-01-20 16:00:00
+C-1020,Quillbase Analytics: query timeout,Dashboards are slow and queries hit a timeout on large tables.,Quillbase query,Low,2026-02-11 09:00:00,2026-02-21 16:00:00
+C-1021,Lumenfield Bridge: permission error,Analysts get access denied on the finance workspace.,Tessera permission,Critical,2026-03-12 09:00:00,2026-03-22 16:00:00
+C-1022,Lumenfield Bridge: csv export columns,The csv export drops two columns and reorders headers.,Tessera csv,High,2026-04-13 09:00:00,2026-04-23 16:00:00
+C-1023,Quillbase Analytics: stale data sync,Data is stale. The nightly sync is not updating since Monday.,Tessera stale,Medium,2026-05-14 09:00:00,2026-05-24 16:00:00
+C-1024,Tessera Gateway: how to schedule report,How do I schedule a weekly report to a shared mailbox?,Lumenfield how,Low,2026-06-15 09:00:00,2026-06-25 16:00:00
+C-1025,Lumenfield Bridge: oauth token expired,Connector stops pulling data. Our OAuth token expired and reauthorize fails.,Tessera oauth,Critical,2026-07-16 09:00:00,2026-07-26 16:00:00
+C-1026,Tessera Gateway: query timeout,Dashboards are slow and queries hit a timeout on large tables.,Tessera query,High,2026-08-17 09:00:00,2026-08-27 16:00:00
+C-1027,Lumenfield Bridge: permission error,Analysts get access denied on the finance workspace.,Quillbase permission,Medium,2026-09-18 09:00:00,2026-09-28 16:00:00
+C-1028,Lumenfield Bridge: csv export columns,The csv export drops two columns and reorders headers.,Tessera csv,Low,2026-01-10 09:00:00,2026-01-20 16:00:00
+C-1029,Tessera Gateway: stale data sync,Data is stale. The nightly sync is not updating since Monday.,Lumenfield stale,Critical,2026-02-11 09:00:00,2026-02-21 16:00:00
+C-1030,Tessera Gateway: how to schedule report,How do I schedule a weekly report to a shared mailbox?,Lumenfield how,High,2026-03-12 09:00:00,2026-03-22 16:00:00

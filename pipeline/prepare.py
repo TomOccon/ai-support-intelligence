@@ -1,5 +1,5 @@
 """
-Data preparation layer — normalizes raw Salesforce case data and assembles
+Data preparation layer, normalizes raw Salesforce case data and assembles
 comment threads before LLM analysis.
 """
 
@@ -69,8 +69,8 @@ def _build_comment_map(comments: pd.DataFrame) -> dict[str, list[dict]]:
         result[parent].append({
             "author": row.get("CreatedById", "unknown"),
             "timestamp": str(row.get("CreatedDate", "")),
-            "body": _normalize_field(str(row.get("Body", ""))),
-            "is_customer": bool(row.get("IsCustomer__c", False)),
+            "body": _normalize_field(row.get("Body", "")),
+            "is_customer": _to_bool(row.get("IsCustomer__c", False)),
         })
 
     return result
@@ -79,8 +79,8 @@ def _build_comment_map(comments: pd.DataFrame) -> dict[str, list[dict]]:
 def _assemble_thread(case_row: pd.Series, comments: list[dict]) -> str:
     """Assemble a readable thread string from case + comments."""
     parts = [
-        f"SUBJECT: {case_row.get('Subject', '')}",
-        f"DESCRIPTION: {case_row.get('Description', '')}",
+        f"SUBJECT: {_normalize_field(case_row.get('Subject', ''))}",
+        f"DESCRIPTION: {_normalize_field(case_row.get('Description', ''))}",
         "",
         "--- COMMENT THREAD ---",
     ]
@@ -126,11 +126,22 @@ def _chunk_if_needed(text: str) -> list[str]:
     return segments
 
 
+def _to_bool(value) -> bool:
+    """CSV exports often carry booleans as strings; bool("False") is True."""
+    if isinstance(value, str):
+        return value.strip().lower() in ("true", "1", "yes", "y")
+    if value is None or pd.isna(value):
+        return False
+    return bool(value)
+
+
 def _hash_content(text: str) -> str:
     return hashlib.sha256(text.encode()).hexdigest()[:16]
 
 
 def _normalize_field(value: str) -> str:
+    if value is None or (not isinstance(value, str) and pd.isna(value)):
+        return ""
     return " ".join(str(value).split())[:2000]
 
 

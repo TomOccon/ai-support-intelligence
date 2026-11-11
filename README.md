@@ -111,42 +111,19 @@ for any field that doesn't match the expected type.
 
 ## Code Structure
 
+This repo contains the preparation and analysis layers. Ingestion, output writing and orchestration depend on the customer environment and are not published.
+
 ```
 ai-support-intelligence/
 ├── pipeline/
-│   ├── ingest.py          # Salesforce data extraction
-│   ├── prepare.py         # Data preparation + chunking
-│   ├── analyze.py         # LLM analysis layer
-│   ├── score.py           # Structured scoring + validation
-│   └── output.py          # Dataset write + idempotency
-├── config/
-│   ├── scoring_schema.json  # Output schema definition
-│   └── prompts/             # System + user prompt templates
-├── tests/
-│   ├── test_prepare.py
-│   ├── test_analyze.py
-│   └── fixtures/            # Sample case data (anonymized)
-├── notebooks/
-│   └── exploration.ipynb    # EDA + prompt iteration
+│   ├── prepare.py         # Case + comment join, normalization, hashing, overlapping chunking
+│   └── analyze.py         # Token-bucket throttling, retry with backoff, JSON validation, aggregation
 └── README.md
 ```
 
-## Running It
+## Using the Layers
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure
-cp config/example.env .env
-# Fill in: SALESFORCE_URL, LLM_API_KEY, OUTPUT_DATASET_ID
-
-# Run pipeline
-python -m pipeline.run --start-date 2024-01-01 --end-date 2024-03-31
-
-# Re-run incrementally (skips already-scored cases)
-python -m pipeline.run --incremental
-```
+`prepare_cases(raw_cases, raw_comments)` takes two pandas DataFrames (Salesforce `Case` and `CaseComment` shaped) and returns `PreparedCase` objects. `ThrottledAnalyzer(llm_client, existing_hashes).score_cases(cases)` scores them. `llm_client` is any object exposing `chat(system, user, max_tokens, temperature)`, so it works with any provider. Pass the content hashes of cases already scored and they are skipped, which makes re-runs idempotent.
 
 ## Sample Output
 
